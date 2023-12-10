@@ -1,0 +1,39 @@
+/* ForYou.css */
+.forYouWrapper {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    /* Updated for responsiveness */
+    grid-auto-rows: 1fr;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    justify-content: center;
+}
+
+.item {
+    padding: .25rem;
+    display: flex;
+    flex-direction: column;
+    gap: .5vh;
+}
+
+.item p {
+    max-width: 55%;
+    font-weight: 500;
+    font-size: 1rem;
+}
+
+.itemImg {
+    border-radius: 16px;
+}
+
+/* Media query for mobile responsiveness */
+@media (max-width: 526px) {
+    .forYouWrapper {
+        grid-template-columns: repeat(2, 1fr);
+        /* Two columns on mobile */
+    }
+}

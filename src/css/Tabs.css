@@ -1,0 +1,45 @@
+.tabsWrapper {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 2vh 1vh;
+}
+
+.tabsTriggers {
+    display: flex;
+    flex-direction: column;
+    width: 43%;
+    font-size: 2.2vh;
+    gap: .3vh;
+    padding-bottom: 1.5vh;
+    background-color: white;
+}
+
+.tabsHeaders {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+
+}
+
+.selectedTab {
+    font-weight: bold;
+    transition: font-weight 0.2s ease-in-out;
+}
+
+.selectedIndicator {
+    width: 35px;
+    height: 4px;
+    border-radius: 5px;
+    margin-left: 7%;
+    transition: all .3s ease-in-out;
+    background-color: black;
+}
+
+.tabsContent {
+    width: 100%;
+    height: 90vh;
+    overflow: scroll;
+}
